@@ -1,50 +1,86 @@
-.card {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  animation: fadeIn 1.5s ease-in-out;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Atharva & Ankit</title>
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
 
-h2 {
-  font-size: 2rem;
-  margin: 15px 0;
-  color: #ffe066;
-}
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#6a11cb,#2575fc);
+      overflow:hidden;
+    }
 
-p {
-  font-size: 1.2rem;
-  margin-top: 15px;
-}
+    .container{
+      background:rgba(255,255,255,.15);
+      backdrop-filter:blur(10px);
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+      color:white;
+      box-shadow:0 10px 25px rgba(0,0,0,.3);
+      animation:fadeIn 1.2s ease;
+    }
 
-.emoji {
-  font-size: 3rem;
-  animation: bounce 1.5s infinite;
-}
+    h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+    h2{
+      font-size:2rem;
+      color:#ffe066;
+      margin-bottom:20px;
+    }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
+    p{
+      font-size:1.2rem;
+    }
+
+    .emoji{
+      font-size:60px;
+      animation:bounce 1.5s infinite;
+      display:block;
+      margin-bottom:15px;
+    }
+
+    @keyframes bounce{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-15px);}
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:scale(.8);
+      }
+      to{
+        opacity:1;
+        transform:scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <span class="emoji">🎉</span>
+  <h1>Welcome</h1>
+  <h2>Atharva & Ankit</h2>
+  <p>We are excited to have you here.</p>
+  <p>Have an amazing journey! 🚀</p>
+</div>
+
+</body>
+</html>
