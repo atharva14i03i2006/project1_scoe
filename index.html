@@ -1,4 +1,50 @@
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat libero architecto eligendi corporis cumque ipsum animi sequi officia culpa rem laudantium, fugiat dicta debitis corrupti ullam doloremque eaque asperiores aliquid.</p>
-<p>Ad odio impedit enim eligendi quos, aperiam eveniet assumenda beatae et in consectetur repellat blanditiis veniam cumque sit culpa quas rem accusamus, hic quasi magni mollitia? Sequi a adipisci voluptatibus?</p>
-<p>Optio, ipsum dicta. Dignissimos, consectetur! Officia facere numquam, ex minus, dolore quae hic autem, deserunt ipsum deleniti rem! Animi eos enim ipsum beatae repellendus, laborum itaque quia blanditiis dignissimos vero!</p>
-<p> ANKIT </p>
+.card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #ffe066;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.emoji {
+  font-size: 3rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
